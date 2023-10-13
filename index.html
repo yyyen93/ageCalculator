@@ -32,33 +32,42 @@
 <body>
   <div id="container">
     <div id="row">
-      <form action="#">
+      <form action="#" id="form">
         <div>
           <label for="day">DAY</label>
           <input type="text" name="day" id="day" placeholder="DD">
+          <span class="error"></span>
         </div>
         <div>
           <label for="month">MONTH</label>
           <input type="text" name="month" id="month" placeholder="MM">
+          <span class="error"></span>
         </div>
         <div>
           <label for="year">YEAR</label>
           <input type="text" name="year" id="year" placeholder="YYYY">
+          <span class="error"></span>
         </div>
       </form>
 
       <div id="alignBtn">
-        <button type="submit">
+        <button type="submit" form="form" id="btn">
           <img src="./assets/images/icon-arrow.svg" alt="submit">
         </button>
       </div>
 
+      <div id="result">
+        <div id="resultrow">
+          <p>years<span></span></p>
+          <p>months<span></span></p>
+          <p>days<span></span></p>
+        </div>
+      </div>
 
-      <p><span></span> -- years</p>
-      <p><span></span> -- months</p>
-      <p><span></span> -- days</p>
     </div>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
